@@ -62,6 +62,8 @@ class TicTacToe
     end
 
     def full?
+        #indes=@board.each_with_index.map { |a, i| a == "X" ? i : nil }.compact
+        @board.count == 9
     end
     def draw?
     end
